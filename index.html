@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Likhitha ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        /* ================= FIRST SCREEN ================= */
+
+        .welcome {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            transition: 0.8s ease;
+        }
+
+        .welcome h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+            animation: bounce 2s infinite;
+        }
+
+        .welcome p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .envelope {
+            font-size: 100px;
+            animation: envelopeFloat 2s ease-in-out infinite;
+            margin-bottom: 25px;
+        }
+
+        .open-btn {
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background: white;
+            color: #ff4f81;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .open-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+        }
+
+
+        /* ================= LETTER ================= */
+
+        .letter-container {
+            display: none;
+            width: 90%;
+            max-width: 700px;
+            padding: 30px 20px;
+            text-align: center;
+            animation: appear 1s ease;
+        }
+
+        .letter-container h1 {
+            color: white;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 21px;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            text-align: left;
+        }
+
+        .card p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 18px;
+        }
+
+        .birthday {
+            text-align: center;
+            font-size: 24px !important;
+            font-weight: bold;
+            color: #ff4f81 !important;
+        }
+
+
+        /* ================= FLOATING HEARTS ================= */
+
+        .heart {
+            position: fixed;
+            bottom: -20px;
+            font-size: 25px;
+            animation: float 5s linear infinite;
+            pointer-events: none;
+        }
+
+
+        /* ================= ANIMATIONS ================= */
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        @keyframes envelopeFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.8) translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 600px) {
+
+            .welcome h1 {
+                font-size: 32px;
+            }
+
+            .welcome p {
+                font-size: 17px;
+            }
+
+            .envelope {
+                font-size: 80px;
+            }
+
+            .letter-container h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .card p {
+                font-size: 15px;
+            }
+
+            .birthday {
+                font-size: 21px !important;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <!-- ================= FIRST SCREEN ================= -->
+
+    <div class="welcome" id="welcome">
+
+        <div class="envelope">
+            💌
+        </div>
+
+        <h1>Hey Likhitha ❤️</h1>
+
+        <p>
+            I have a little surprise for you... ✨
+        </p>
+
+        <button class="open-btn" onclick="openSurprise()">
+            Open Your Surprise 🎁
+        </button>
+
+    </div>
+
+
+    <!-- ================= LETTER SCREEN ================= -->
+
+    <div class="letter-container" id="letter">
+
+        <h1>🎂 Happy Birthday Likhitha 🎂</h1>
+
+        <div class="subtitle">
+            ❤️ A special message for you ❤️
+        </div>
+
+        <div class="card">
+
+            <p>
+                Hey Likhitha ❤️,
+            </p>
+
+            <p>
+                Nenu eppudu anukoledu nenu evarini ayina love chestha ani… but sudden ga nuv naa life loki vachav. From that moment, you made me so happy, and I’m really glad that you’re with me. 🥹❤️
+            </p>
+
+            <p>
+                Thanks for coming into my life, Likhitha. You became such a special part of my life, and I never want to lose the beautiful bond we have. I want you to always be a part of my life. ❤️
+            </p>
+
+            <p>
+                Anyway… many more happy returns of the day, my dear! 🎂🎉 I hope this birthday brings you lots of happiness, smiles, and beautiful memories. ✨
+            </p>
+
+            <p>
+                No matter how life goes, I’ll always care about you and stay loyal to the bond we share. I hope we keep supporting each other and making beautiful memories together. ❤️
+            </p>
+
+            <p class="birthday">
+                Happy Birthday, Likhitha! 🎂❤️✨
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        function openSurprise() {
+
+            const welcome = document.getElementById("welcome");
+            const letter = document.getElementById("letter");
+
+            welcome.style.opacity = "0";
+            welcome.style.transform = "scale(0.8)";
+
+            setTimeout(() => {
+
+                welcome.style.display = "none";
+                letter.style.display = "block";
+
+            }, 700);
+        }
+
+
+        /* Floating Hearts */
+
+        function createHeart() {
+
+            const heart = document.createElement("div");
+
+            heart.classList.add("heart");
+
+            heart.innerHTML = "❤️";
+
+            heart.style.left =
+                Math.random() * 100 + "vw";
+
+            heart.style.animationDuration =
+                (3 + Math.random() * 3) + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 6000);
+        }
+
+        setInterval(createHeart, 500);
+
+    </script>
+
+</body>
+</html>
